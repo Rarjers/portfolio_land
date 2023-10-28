@@ -1,0 +1,86 @@
+.wrapp_about_me {
+    margin: 112px 0;
+
+    .block_about_me {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .about_left {
+            font-family: 'Fira Code', monospace;
+            width: 515px;
+
+            p {
+                color: grey;
+            }
+        }
+    }
+    .head_project {
+        margin-bottom: 48px;
+    
+        h3 {
+            font-family: 'Fira Code', monospace;
+            font-size: 32px;
+            color: white;
+    
+            span {
+                color: #C778DD;
+            }
+        }
+        p {
+            color: white;
+            margin-top: 14px;
+        }
+    }
+}
+.wrapp_skills {
+    margin-bottom: 162px;
+
+    .head_project {
+        margin-bottom: 48px;
+    
+        h3 {
+            font-family: 'Fira Code', monospace;
+            font-size: 32px;
+            color: white;
+    
+            span {
+                color: #C778DD;
+            }
+        }
+    }
+    .block_skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 16px;
+
+        .skills_item {
+            width: 192px;
+            border: solid 1px white;
+            font-family: 'Fira Code', monospace;
+
+            h3 {
+                font-size: 16px;
+                font-weight: 500;
+                padding: 8px;
+                color: white;
+                border-bottom: solid 1px white;
+            }
+            p {
+                color: grey;
+                padding: 8px;
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .wrapp_about_me .block_about_me {
+        flex-direction: column-reverse;
+    }
+    .wrapp_about_me .block_about_me .about_left {
+        margin-top: 50px;
+        width: 100%;
+
+    }
+}

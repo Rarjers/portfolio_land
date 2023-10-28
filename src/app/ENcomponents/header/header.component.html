@@ -1,0 +1,26 @@
+<div class="conteiner">
+    <nav>
+        <div class="logo">
+            <img src="/assets/header_img/logo.svg" alt="logo">
+            <p>Rarjers</p>
+        </div>
+        <ul>
+            <li routerLink="/"><span>#</span>home</li>
+            <li routerLink="/works"><span>#</span>works</li>
+            <li routerLink="/about"><span>#</span>about-me</li>
+            <li routerLink="/contact"><span>#</span>contacts</li>
+            <li>EN <span><img src="/assets/header_img/nav_arrow_langue.svg" alt="arrow"></span></li>
+
+            
+        </ul>
+        <ul id="wrapp_burder_menu">
+            <img (click) = "toogleBurgerMenu()" class="burger_menu" src="/assets/header_img/burger_menu.svg" alt="menu">
+            <div *ngIf="burgerOpen" class="block_burger">
+                <ol routerLink="/"><span>#</span>home</ol>
+                <ol routerLink="/works"><span>#</span>works</ol>
+                <ol routerLink="/about"><span>#</span>about-me</ol>
+                <ol routerLink="/contact"><span>#</span>contacts</ol>
+            </div>
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,198 @@
+.wrapp_block_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 62px 0 112px 0;
+    .left_block {
+        font-family: 'Fira Code', monospace;
+        color: white;
+        h1 {
+            font-size: 32px;
+            span {
+                color: #C778DD;
+            }
+        }
+        p {
+            color: gray;
+            margin: 32px 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            border: solid 1px #C778DD;
+            padding: 8px 16px;
+        }
+    }
+    .right_block_img {
+        p {
+            color: grey;
+            padding: 8px 80px 8px 8px;
+            border: solid 1px white;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 10px;
+            }
+            span {
+                color: white;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.quote {
+    text-align: center;
+    margin-bottom: 74px;
+}
+.head_project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+    p {
+        font-family: 'Fira Code', monospace;
+        font-size: 32px;
+        color: white;
+
+        span {
+            color: #C778DD;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Fira Code', monospace;
+    }
+}
+.wrapp_project_item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); /* Здесь 200px - это минимальная ширина блока */
+    grid-template-rows: auto;
+    justify-content: space-between;
+    grid-gap: 16px;
+    .project_item {
+        border: solid 1px white;
+        font-family: 'Fira Code', monospace;
+        padding-bottom: 24px;
+        height: 100%;
+        img {
+            width: 100%;
+        }
+        .skills {
+            border: solid 1px white;
+            color: grey;
+            padding: 8px 0 8px 8px;
+        }
+        h3 {
+            color: white;
+            margin: 16px 0 16px 16px;
+            font-size: 24px;
+        }
+        .description {
+            color: grey;
+            margin-left: 16px;
+            margin-bottom: 24px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            border: solid 1px #C778DD;
+            padding: 8px 16px;
+            margin-left: 16px;
+        }
+    }
+}
+.wrapp_skills {
+    margin-top: 106px;
+    .block_skills {
+        display: flex;
+        justify-content: space-between;
+        .right_block_skills {
+            display: flex;
+            margin-left: -16px;
+        }
+        .first_block, .second_block, .three_block {
+            width: 178px;
+            margin: -16px 0 0 16px;
+        }
+        .databases, .other, .tools, .frameworks, .languages {
+            border: solid 1px white;
+            margin-top: 16px;
+            font-family: 'Fira Code', monospace;
+            h3 {
+                color: white;
+                padding: 8px 0 8px 8px;
+                font-size: 16px;
+                border-bottom: solid 1px white;
+            }
+            p {
+                color: grey;
+                padding: 8px 0 8px 8px;
+            }
+        }
+    }
+}
+.wrapp_about_me {
+    margin: 112px 0;
+    .block_about_me {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .about_left {
+            font-family: 'Fira Code', monospace;
+            width: 515px;
+            p {
+                color: grey;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                border: solid 1px #C778DD;
+                padding: 8px 16px;
+                display: inline-block;
+                margin-top: 35px;
+            }
+            a::after {
+                content: '→';
+                padding-left: 10px;
+            }
+        }
+    }
+}
+.wrapp_contact {
+    margin-bottom: 145px;
+}
+.block_contact {
+    display: flex;
+    justify-content: space-between;
+    .left_block {
+        width: 505px;
+        p {
+            font-family: 'Fira Code', monospace;
+            color: grey;
+        }
+    }
+    .right_block {
+        font-family: 'Fira Code', monospace;
+        border: solid 1px white;
+        h3 {
+            color: white;
+            font-size: 16px;
+            padding: 16px 44px 16px 16px;
+        }
+        .block_link {
+            margin: 0 16px 16px 16px;
+            color: grey;
+            p {
+                transition: all .2s ease-in-out;
+                cursor: pointer;
+                img {
+                    padding-right: 5px;
+                }
+            }
+            p:hover {
+                color: white;
+            }
+        }   
+    }
+}

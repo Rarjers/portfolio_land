@@ -1,0 +1,86 @@
+.wrapp_works {
+    margin-top: 53px;
+
+    .block_header {
+        font-family: 'Fira Code', monospace;
+        color: white;
+
+        h2 {
+            font-size: 32px;
+
+            span {
+                color: #C778DD;
+            }
+        }
+        p {
+            margin-top: 14px;
+        }
+    }
+    .block_project {
+        font-family: 'Fira Code', monospace;
+        color: white;
+        margin-top: 68px;
+
+        h2 {
+            font-size: 32px;
+
+            span {
+                color: #C778DD;
+            }
+        }
+    }
+    .wrapp_project_item {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+        grid-gap: 16px;
+        margin: 48px 0 81px 0;
+    
+        .project_item {
+            border: solid 1px white;
+            font-family: 'Fira Code', monospace;
+            padding-bottom: 24px;
+            height: 100%;
+    
+            .skills {
+                border: solid 1px white;
+                color: grey;
+                padding: 8px 0 8px 8px;
+            }
+            h3 {
+                color: white;
+                margin: 16px 0 16px 16px;
+                font-size: 24px;
+            }
+            .description {
+                color: grey;
+                margin-left: 16px;
+                margin-bottom: 24px;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                border: solid 1px #C778DD;
+                padding: 8px 16px;
+                margin-left: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 1036px) {
+    .wrapp_works .wrapp_project_item {
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+        justify-items: center;
+        column-gap: 50px;
+    }
+}
+@media (max-width: 685px) {
+    .wrapp_works .wrapp_project_item {
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+        justify-items: center;
+        column-gap: 50px;
+    }
+}

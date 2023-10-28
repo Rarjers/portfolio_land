@@ -1,0 +1,75 @@
+@media (max-width: 900px) {
+    .wrapp_block_info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .wrapp_block_info .left_block a {
+        display: block;
+        text-align: center;
+    }
+    .wrapp_block_info .left_block {
+        margin-top: 50px;
+    }
+    .wrapp_block_info .left_block a {
+        display: block;
+        text-align: center;
+    }
+    .wrapp_skills .block_skills {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left_block_skills {
+        margin-bottom: 50px;
+    }
+    .wrapp_about_me .block_about_me {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .wrapp_about_me .block_about_me .about_left {
+        font-family: "Fira Code", monospace;
+        width: 515px;
+        margin-top: 50px;
+    }
+    .block_contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block_contact .left_block {
+        margin-bottom: 50px;
+    }
+    .width_adapt {
+        width: 100%;
+    }
+    .adapt_visib {
+        display: none;
+    }
+}
+@media (max-width: 565px) {
+    .wrapp_skills .block_skills .right_block_skills {
+        flex-direction: column;
+    }
+    .wrapp_skills .block_skills .first_block, .wrapp_skills .block_skills .second_block, .wrapp_skills .block_skills .three_block {
+        width: 178px;
+        margin: 6px 0 0 16px;
+    }
+    .wrapp_about_me .block_about_me .about_left, .block_contact .left_block {
+        width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    .right_block_img {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .wrapp_block_info .right_block_img p img {
+        width: auto;
+    }
+}
